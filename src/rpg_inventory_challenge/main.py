@@ -11,6 +11,12 @@ def do_that():
     """does something"""
     print("You did that.")
 
+def choose_me():
+    """responds to the choose me option"""
+    msg = "\nYou like me; you really like me!!!!"
+    msg += "\N{SPARKLING HEART}\N{SPARKLING HEART}\N{SPARKLING HEART}\N{SPARKLING HEART}"
+    print(msg)
+
 # Set up the menu system
 # Build the menu
 menu = "\nGeneric Shopping Market\n\n"
@@ -32,6 +38,8 @@ while user_choice != "4":
         do_this()
     elif user_choice == "2":
         do_that()
+    elif user_choice == "3":
+        choose_me()
     else:
         print("That is not an option")
 
